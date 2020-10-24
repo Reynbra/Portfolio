@@ -49,10 +49,7 @@ int main()
         char restartInput;
         //Initialization of input used for default input validation/restart.
 
-        cout << "Brandyn Reynolds 108963565\n";
-        //Print out of name and student ID
-
-        do
+       do
         {
                 if (menuChoice != quit)
 		{
