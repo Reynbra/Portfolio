@@ -1,0 +1,5 @@
+- Name: Brandyn Reynolds
+- Student ID: 108963565
+- This program compiles and runs
+- I tested this code on a desktop PC using the visual studio IDE.
+- To compile and run it, I would say run "make" because I used the template makefile provided.
