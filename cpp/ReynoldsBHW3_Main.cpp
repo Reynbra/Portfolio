@@ -15,7 +15,7 @@ int main()
 	bool done = false;
 	
 
-	cout << "Brandyn Reynolds 108963565\n"
+	cout << "Brandyn Reynolds"
 		<< "Welcome! This program simulates the tabletop game Battleship.\n"
 		<< endl;
 
