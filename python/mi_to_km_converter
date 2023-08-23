@@ -1,0 +1,46 @@
+from tkinter import *
+
+FONT = ("Arial", 12)
+
+
+def calc_button_click():
+    mi_value = float(mi_input.get())
+    km_value = mi_value * 1.609
+    km_conv_val.config(text=f"{km_value}")
+
+
+# creating window and label
+window = Tk()
+window.title("Miles to Kilometer Converter")
+window.minsize(width=400, height=200)
+window.config(padx=50, pady=50)
+
+# miles field entry text box
+mi_input = Entry(width=10)
+mi_input.grid(column=1, row=0)
+
+# miles label
+mi_label = Label(font=FONT)
+mi_label.config(text="Miles")
+mi_label.grid(column=2, row=0)
+
+# is equal to label
+is_equal_to = Label(font=FONT)
+is_equal_to.config(text="is equal to")
+is_equal_to.grid(column=0, row=1)
+
+# km conversion
+km_conv_val = Label(font=FONT)
+km_conv_val.config(text=0)
+km_conv_val.grid(column=1, row=1)
+
+# km label
+km_label = Label(font=FONT)
+km_label.config(text="Km")
+km_label.grid(column=2, row=1)
+
+# calculate button
+calc_button = Button(text="Calculate", command=calc_button_click)
+calc_button.grid(column=1, row=2)
+
+window.mainloop()
